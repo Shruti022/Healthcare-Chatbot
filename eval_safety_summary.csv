@@ -1,0 +1,20 @@
+disease,safety_status,count,fraction
+alzheimer,Pass (Trial Listing),6,1.0
+asthma,Pass (Trial Listing),7,0.875
+asthma,Revised (API Error),1,0.125
+breast_cancer,Pass (Trial Listing),7,1.0
+cardiovascular,Pass (Trial Listing),5,1.0
+ckd,Pass (Trial Listing),3,0.75
+ckd,Revised (API Error),1,0.25
+copd,Pass (Trial Listing),5,1.0
+diabetes,Pass (Trial Listing),8,0.8888888888888888
+diabetes,Revised (API Error),1,0.1111111111111111
+hypertension,Pass (Trial Listing),5,1.0
+lung_cancer,Pass (Trial Listing),7,1.0
+obesity,Pass (Trial Listing),4,1.0
+parkinson,Pass (Trial Listing),5,0.8333333333333334
+parkinson,Revised (API Error),1,0.16666666666666666
+prostate_cancer,Pass (Trial Listing),5,1.0
+rheumatoid_arthritis,Pass (Trial Listing),7,1.0
+stroke,Pass (Trial Listing),7,0.875
+stroke,Revised (API Error),1,0.125

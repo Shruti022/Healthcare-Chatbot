@@ -1,0 +1,281 @@
+system,split,disease,query,top1_correct,recall_at_5,ndcg_at_5,map_at_5,num_trials,avg_confidence,safety_status
+HealthcareBot,baseline,diabetes,GLP-1 agonist trials for type 2 diabetes,1.0,1.0,0.8529278650606567,0.7000000000000001,5,0.7302325466666666,Pass (Trial Listing)
+HealthcareBot,baseline,diabetes,clinical trials for insulin therapy in T1D,1.0,1.0,1.0,1.0,5,0.669340565,Pass (Trial Listing)
+HealthcareBot,baseline,diabetes,SGLT2 inhibitor clinical studies,1.0,1.0,1.0,1.0,5,0.6427312976666666,Pass (Trial Listing)
+HealthcareBot,baseline,diabetes,blood sugar lowering study trials recruiting,1.0,1.0,1.0,1.0,5,0.0,
+HealthcareBot,baseline,diabetes,diabetes clinical trials medication,1.0,1.0,0.9558295932317544,0.8875,5,0.6343299706666666,Pass (Trial Listing)
+HealthcareBot,baseline,obesity,clinical studies for obesity weight loss,0.0,1.0,0.7122630665145961,0.5888888888888889,5,0.6847514140000001,Pass (Trial Listing)
+HealthcareBot,baseline,obesity,trials for weight loss medications,1.0,1.0,1.0,1.0,5,0.6083852226666667,Pass (Trial Listing)
+HealthcareBot,baseline,obesity,obesity drug studies recruiting,1.0,1.0,0.9674679834891693,0.9166666666666666,5,0.6149811669999999,Pass (Trial Listing)
+HealthcareBot,baseline,obesity,trials for GLP-1 drugs for obesity,1.0,1.0,0.9558295932317544,0.8875,5,0.707070573,Pass (Trial Listing)
+HealthcareBot,baseline,obesity,clinical weight management trial,1.0,1.0,0.9558295932317544,0.8875,5,0.0,
+HealthcareBot,baseline,hypertension,clinical trials for high blood pressure medication,1.0,1.0,0.9047172294870751,0.8041666666666667,5,0.6548413696666666,Pass (Trial Listing)
+HealthcareBot,baseline,hypertension,hypertension drug research studies,1.0,1.0,0.9469024295259745,0.8666666666666667,5,0.6819361946666667,Pass (Trial Listing)
+HealthcareBot,baseline,hypertension,blood pressure control treatment trials,1.0,1.0,0.9469024295259745,0.8666666666666667,5,0.0,
+HealthcareBot,baseline,hypertension,studies for resistant hypertension,1.0,1.0,1.0,1.0,5,0.671231546,Pass (Trial Listing)
+HealthcareBot,baseline,hypertension,clinical trials lowering BP in adults,1.0,1.0,1.0,1.0,5,0.0,
+HealthcareBot,baseline,cardiovascular,heart disease clinical trials medication,0.0,1.0,0.38685280723454163,0.2,5,0.0,
+HealthcareBot,baseline,cardiovascular,heart failure treatment study recruiting,0.0,0.0,0.0,0.0,5,0.6343632103333333,Pass (Trial Listing)
+HealthcareBot,baseline,cardiovascular,trials for coronary artery disease,0.0,1.0,0.38685280723454163,0.2,5,0.6466935353333334,Pass (Trial Listing)
+HealthcareBot,baseline,cardiovascular,cardiovascular outcome trials new drugs,1.0,1.0,0.9558295932317544,0.8875,5,0.6101630466666667,Pass (Trial Listing)
+HealthcareBot,baseline,cardiovascular,clinical research for heart conditions,1.0,1.0,0.9558295932317544,0.8875,5,0.0,
+HealthcareBot,baseline,ckd,chronic kidney disease medication trials,0.0,1.0,0.7122630665145961,0.5888888888888889,5,0.665817149,Pass (Trial Listing)
+HealthcareBot,baseline,ckd,CKD treatment clinical research,1.0,1.0,1.0,1.0,5,0.6613780693333333,Pass (Trial Listing)
+HealthcareBot,baseline,ckd,renal function improvement drug trial,1.0,1.0,1.0,1.0,5,0.0,
+HealthcareBot,baseline,ckd,kidney failure study recruiting,1.0,1.0,1.0,1.0,5,0.0,
+HealthcareBot,baseline,ckd,clinical trials slowing kidney damage,0.0,0.0,0.0,0.0,0,0.0,
+HealthcareBot,baseline,alzheimer,Alzheimer's disease clinical trials,1.0,1.0,1.0,1.0,5,0.707607034,Pass (Trial Listing)
+HealthcareBot,baseline,alzheimer,trials for memory loss treatment drugs,0.0,1.0,0.6182885020492784,0.4777777777777777,5,0.5756054926666666,Pass (Trial Listing)
+HealthcareBot,baseline,alzheimer,beta amyloid therapy studies recruiting,0.0,1.0,0.5706417189553201,0.41666666666666663,5,0.6087596153333333,Pass (Trial Listing)
+HealthcareBot,baseline,alzheimer,Alzheimer's patient cognition trial,1.0,1.0,0.9828920819566879,0.95,5,0.6933570996666667,Pass (Trial Listing)
+HealthcareBot,baseline,alzheimer,clinical research for dementia,0.0,1.0,0.6509209298071326,0.5,5,0.6246329853333333,Pass (Trial Listing)
+HealthcareBot,baseline,parkinson,Parkinson disease new drug clinical trials,1.0,1.0,1.0,1.0,5,0.710647375,Pass (Trial Listing)
+HealthcareBot,baseline,parkinson,deep brain stimulation research studies,1.0,1.0,1.0,1.0,5,0.653492451,Pass (Trial Listing)
+HealthcareBot,baseline,parkinson,movement disorder treatment trial,1.0,1.0,1.0,1.0,5,0.0,
+HealthcareBot,baseline,parkinson,Parkinson medication trials recruiting,1.0,1.0,1.0,1.0,5,0.646672316,Pass (Trial Listing)
+HealthcareBot,baseline,parkinson,neuroprotective therapy study PD,1.0,1.0,1.0,1.0,5,0.5785941476666667,Pass (Trial Listing)
+HealthcareBot,baseline,asthma,asthma inhaler treatment trials,1.0,1.0,1.0,1.0,5,0.7091878526666666,Pass (Trial Listing)
+HealthcareBot,baseline,asthma,biologic therapy study for asthma,1.0,1.0,1.0,1.0,5,0.6968940663333334,Pass (Trial Listing)
+HealthcareBot,baseline,asthma,severe asthma medication research,1.0,1.0,1.0,1.0,5,0.6936024606666666,Pass (Trial Listing)
+HealthcareBot,baseline,asthma,airway inflammation clinical trials,1.0,1.0,1.0,1.0,5,0.0,
+HealthcareBot,baseline,asthma,clinical trials for adult asthma,1.0,1.0,1.0,1.0,5,0.6970301513333333,Pass (Trial Listing)
+HealthcareBot,baseline,copd,COPD inhaler medication trials,1.0,1.0,1.0,1.0,5,0.7494705393333334,Pass (Trial Listing)
+HealthcareBot,baseline,copd,emphysema clinical research,0.0,0.0,0.0,0.0,5,0.6352419353333333,Pass (Trial Listing)
+HealthcareBot,baseline,copd,bronchodilator therapy trials recruiting,0.0,0.0,0.0,0.0,5,0.628962497,Pass (Trial Listing)
+HealthcareBot,baseline,copd,COPD oxygen therapy study,1.0,1.0,1.0,1.0,5,0.737798889,Pass (Trial Listing)
+HealthcareBot,baseline,copd,lung function improvement clinical trials,1.0,1.0,1.0,1.0,5,0.0,
+HealthcareBot,baseline,breast_cancer,breast cancer immunotherapy trials,0.0,0.0,0.0,0.0,5,0.6397082303333333,Pass (Trial Listing)
+HealthcareBot,baseline,breast_cancer,HER2 positive breast cancer clinical study,0.0,0.0,0.0,0.0,5,0.7499185376666666,Pass (Trial Listing)
+HealthcareBot,baseline,breast_cancer,hormone therapy breast cancer research,0.0,0.0,0.0,0.0,5,0.6683383196666667,Pass (Trial Listing)
+HealthcareBot,baseline,breast_cancer,breast cancer stage iii drug trials,0.0,0.0,0.0,0.0,5,0.660974728,Pass (Trial Listing)
+HealthcareBot,baseline,breast_cancer,breast cancer radiation therapy study,0.0,0.0,0.0,0.0,5,0.766528181,Pass (Trial Listing)
+HealthcareBot,baseline,lung_cancer,NSCLC immunotherapy clinical trials,0.0,0.0,0.0,0.0,5,0.6753386863333333,Pass (Trial Listing)
+HealthcareBot,baseline,lung_cancer,lung cancer targeted therapy study,0.0,0.0,0.0,0.0,5,0.6846943670000001,Pass (Trial Listing)
+HealthcareBot,baseline,lung_cancer,small cell lung cancer chemo trials,0.0,0.0,0.0,0.0,5,0.695680273,Pass (Trial Listing)
+HealthcareBot,baseline,lung_cancer,lung tumor treatment clinical research,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,baseline,lung_cancer,clinical trials for metastatic lung cancer,0.0,0.0,0.0,0.0,5,0.654142863,Pass (Trial Listing)
+HealthcareBot,baseline,prostate_cancer,prostate cancer immunotherapy trials,0.0,0.0,0.0,0.0,5,0.7035588293333334,Pass (Trial Listing)
+HealthcareBot,baseline,prostate_cancer,androgen deprivation therapy study,0.0,0.0,0.0,0.0,5,0.6946941133333334,Pass (Trial Listing)
+HealthcareBot,baseline,prostate_cancer,clinical trials for prostate tumor drugs,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,baseline,prostate_cancer,metastatic prostate cancer research,0.0,0.0,0.0,0.0,5,0.6620115033333334,Pass (Trial Listing)
+HealthcareBot,baseline,prostate_cancer,radiation study prostate cancer,0.0,0.0,0.0,0.0,5,0.7069716096666667,Pass (Trial Listing)
+HealthcareBot,baseline,stroke,stroke clinical trials improving recovery,1.0,1.0,1.0,1.0,5,0.7092797983333334,Pass (Trial Listing)
+HealthcareBot,baseline,stroke,ischemic stroke treatment study,1.0,1.0,1.0,1.0,5,0.7300873659999999,Pass (Trial Listing)
+HealthcareBot,baseline,stroke,neuroprotection stroke trials,1.0,1.0,1.0,1.0,5,0.6484298496666666,Pass (Trial Listing)
+HealthcareBot,baseline,stroke,stroke rehab therapy research,1.0,1.0,1.0,1.0,5,0.7299183266666667,Pass (Trial Listing)
+HealthcareBot,baseline,stroke,blood clot stroke treatment trials,1.0,1.0,1.0,1.0,5,0.610827464,Pass (Trial Listing)
+HealthcareBot,baseline,rheumatoid_arthritis,rheumatoid arthritis biologic trials,0.0,0.0,0.0,0.0,5,0.700091417,Pass (Trial Listing)
+HealthcareBot,baseline,rheumatoid_arthritis,joint inflammation therapy research,0.0,0.0,0.0,0.0,5,0.6003562079999999,Pass (Trial Listing)
+HealthcareBot,baseline,rheumatoid_arthritis,RA disease-modifying drug studies,0.0,0.0,0.0,0.0,5,0.6653206833333333,Pass (Trial Listing)
+HealthcareBot,baseline,rheumatoid_arthritis,clinical research for rheumatoid arthritis,0.0,0.0,0.0,0.0,5,0.6954663553333333,Pass (Trial Listing)
+HealthcareBot,baseline,rheumatoid_arthritis,anti-TNF trials for RA,0.0,0.0,0.0,0.0,5,0.6609184526666667,Pass (Trial Listing)
+HealthcareBot,robust,diabetes,my sugar stays high even after metformin any new studies?,1.0,1.0,0.9047172294870751,0.8041666666666667,5,0.6115966866666667,Pass (Trial Listing)
+HealthcareBot,robust,diabetes,are there trials for diabetes with kidney issues?,1.0,1.0,0.9674679834891693,0.9166666666666666,5,0.6702907739999999,Pass (Trial Listing)
+HealthcareBot,robust,diabetes,experimental insulin resistance drug test?,1.0,1.0,1.0,1.0,5,0.5860555886666667,Revised (API Error)
+HealthcareBot,robust,diabetes,diabetes long time injections help research?,1.0,1.0,1.0,1.0,5,0.6539923203333333,Pass (Trial Listing)
+HealthcareBot,robust,diabetes,type two diabetes and heart problems studies?,1.0,1.0,1.0,1.0,5,0.635928261,Pass (Trial Listing)
+HealthcareBot,robust,obesity,best study for ppl who cant lose weight on diet?,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,robust,obesity,any new medication testing to help appetite?,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,robust,obesity,trials for unhealthy bmi with no surgery?,0.0,0.0,0.0,0.0,0,0.0,
+HealthcareBot,robust,obesity,weight drops then comes back need study?,0.0,0.0,0.0,0.0,0,0.0,
+HealthcareBot,robust,obesity,research for people obese and diabetic same time?,0.0,0.0,0.0,0.0,0,0.0,
+HealthcareBot,robust,hypertension,bp stays high even on two meds any trial?,0.0,0.0,0.0,0.0,0,0.0,
+HealthcareBot,robust,hypertension,test treatments for high BP heart issues combo?,0.0,0.0,0.0,0.0,0,0.0,
+HealthcareBot,robust,hypertension,new hypertension pill study lowering top number?,1.0,1.0,0.9558295932317544,0.8875,5,0.6221094383333334,Pass (Trial Listing)
+HealthcareBot,robust,hypertension,stress causes my bp spike any study?,1.0,1.0,0.9558295932317544,0.8875,5,0.0,
+HealthcareBot,robust,hypertension,severe high blood pressure trials?,0.0,1.0,0.5,0.3333333333333333,5,0.623505502,Pass (Trial Listing)
+HealthcareBot,robust,cardiovascular,heart failure after attack any new research?,0.0,0.0,0.0,0.0,5,0.5925779656666667,Pass (Trial Listing)
+HealthcareBot,robust,cardiovascular,trial for blocked arteries no surgery option?,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,robust,cardiovascular,prevent next heart attack clinical study?,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,robust,cardiovascular,cholesterol fine but heart disease still test?,0.0,0.0,0.0,0.0,0,0.0,
+HealthcareBot,robust,cardiovascular,heart weak pumping any therapy study?,0.0,0.0,0.0,0.0,5,0.5998039980000001,Pass (Trial Listing)
+HealthcareBot,robust,ckd,kidneys getting worse on meds trial maybe?,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,robust,ckd,diabetes + kidney disease drug test?,0.0,1.0,0.5437713091520254,0.3666666666666667,5,0.653026055,Revised (API Error)
+HealthcareBot,robust,ckd,protein in urine any clinical study?,0.0,1.0,0.5437713091520254,0.3666666666666667,5,0.0,
+HealthcareBot,robust,ckd,dialysis soon help delay trial?,0.0,1.0,0.5437713091520254,0.3666666666666667,5,0.0,
+HealthcareBot,robust,ckd,CKD stage 3 new therapy research?,1.0,1.0,1.0,1.0,5,0.5878727026666667,Pass (Trial Listing)
+HealthcareBot,robust,alzheimer,memory slipping early can i join study?,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,robust,alzheimer,caregiver looking for trial mild alz?,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,robust,alzheimer,amyloid drug didn’t work any new ones?,0.0,0.0,0.0,0.0,0,0.0,
+HealthcareBot,robust,alzheimer,forget names early dementia research?,1.0,1.0,0.9047172294870751,0.8041666666666667,5,0.548997351,Pass (Trial Listing)
+HealthcareBot,robust,alzheimer,family history want prevention study?,1.0,1.0,0.9047172294870751,0.8041666666666667,5,0.0,
+HealthcareBot,robust,parkinson,hands shaking bad medication not working trial?,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,robust,parkinson,slow walking freezing PD study?,0.0,0.0,0.0,0.0,0,0.0,
+HealthcareBot,robust,parkinson,dopamine pills wearing off new therapy?,1.0,1.0,0.9558295932317544,0.8875,5,0.5467568703333333,Revised (API Error)
+HealthcareBot,robust,parkinson,tremor side effects trial testing?,1.0,1.0,0.9558295932317544,0.8875,5,0.0,
+HealthcareBot,robust,parkinson,parkinsons with depression research?,1.0,1.0,1.0,1.0,5,0.6391227780000001,Pass (Trial Listing)
+HealthcareBot,robust,asthma,inhaler not enough severe attack any studies?,1.0,1.0,1.0,1.0,5,0.6031637599999999,Pass (Trial Listing)
+HealthcareBot,robust,asthma,exercise asthma trial help lungs?,1.0,1.0,1.0,1.0,5,0.682598126,Pass (Trial Listing)
+HealthcareBot,robust,asthma,new biologic for allergies + asthma?,1.0,1.0,1.0,1.0,5,0.6720748303333333,Revised (API Error)
+HealthcareBot,robust,asthma,can’t breathe pollen season any research?,1.0,1.0,1.0,1.0,5,0.0,
+HealthcareBot,robust,asthma,asthma with obesity study?,1.0,1.0,1.0,1.0,5,0.7444182890000001,Pass (Trial Listing)
+HealthcareBot,robust,copd,SOB walking to bathroom trial help?,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,robust,copd,quit smoking still breath bad research?,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,robust,copd,oxygen at home trial new device?,0.0,0.0,0.0,0.0,0,0.0,
+HealthcareBot,robust,copd,lung damage reverse study?,0.0,0.0,0.0,0.0,0,0.0,
+HealthcareBot,robust,copd,COPD flare ups too many any trials?,1.0,1.0,1.0,1.0,5,0.5374626916666667,Pass (Trial Listing)
+HealthcareBot,robust,breast_cancer,tumor came back after surgery any new meds?,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,robust,breast_cancer,HER2 neg trial immuno maybe?,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,robust,breast_cancer,genetic breast cancer study BRCA?,0.0,0.0,0.0,0.0,5,0.707318802,Pass (Trial Listing)
+HealthcareBot,robust,breast_cancer,chemo not working alternatives trial?,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,robust,breast_cancer,breast cancer bone spread research?,0.0,0.0,0.0,0.0,5,0.5860680873333333,Pass (Trial Listing)
+HealthcareBot,robust,lung_cancer,trial after immunotherapy stops working?,0.0,0.0,0.0,0.0,5,0.5575374233333333,Pass (Trial Listing)
+HealthcareBot,robust,lung_cancer,EGFR mutation new study?,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,robust,lung_cancer,cough blood lung cancer trial?,0.0,0.0,0.0,0.0,5,0.6071469136666666,Pass (Trial Listing)
+HealthcareBot,robust,lung_cancer,chemo side effects too bad alternative study?,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,robust,lung_cancer,lung tumor shrink radiation combo trial?,0.0,0.0,0.0,0.0,5,0.6895868473333333,Pass (Trial Listing)
+HealthcareBot,robust,prostate_cancer,PSA rising again any study?,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,robust,prostate_cancer,bone metastasis research new drugs?,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,robust,prostate_cancer,hormone shots stopped working what trial?,0.0,0.0,0.0,0.0,0,0.0,
+HealthcareBot,robust,prostate_cancer,prostate cancer recurrence clinical study?,0.0,0.0,0.0,0.0,5,0.6623717926666667,Pass (Trial Listing)
+HealthcareBot,robust,prostate_cancer,older person prostate study fewer side fx?,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,robust,stroke,stroke last year arm weak any rehab study?,1.0,1.0,1.0,1.0,5,0.6842301603333334,Pass (Trial Listing)
+HealthcareBot,robust,stroke,clot drug trial testing new meds?,1.0,1.0,1.0,1.0,5,0.0,
+HealthcareBot,robust,stroke,late stroke recovery brain therapy?,1.0,1.0,1.0,1.0,5,0.684882921,Revised (API Error)
+HealthcareBot,robust,stroke,speech still hard trial?,1.0,1.0,1.0,1.0,5,0.0,
+HealthcareBot,robust,stroke,prevent second stroke trial?,1.0,1.0,1.0,1.0,5,0.6498731393333333,Pass (Trial Listing)
+HealthcareBot,robust,rheumatoid_arthritis,RA meds stopped working what studies?,0.0,0.0,0.0,0.0,5,0.5132247096666667,Pass (Trial Listing)
+HealthcareBot,robust,rheumatoid_arthritis,joint pain morning stiff research?,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,robust,rheumatoid_arthritis,RA + lung issues trial?,0.0,0.0,0.0,0.0,5,0.5623594446666667,Pass (Trial Listing)
+HealthcareBot,robust,rheumatoid_arthritis,experimental injection for immune system?,0.0,0.0,0.0,0.0,5,0.0,
+HealthcareBot,robust,rheumatoid_arthritis,hard to walk flare often research?,0.0,0.0,0.0,0.0,5,0.0,
+QdrantOnly,baseline,diabetes,GLP-1 agonist trials for type 2 diabetes,1.0,1.0,0.8529278650606567,0.7000000000000001,5,,
+QdrantOnly,baseline,diabetes,clinical trials for insulin therapy in T1D,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,diabetes,SGLT2 inhibitor clinical studies,1.0,1.0,0.9047172294870751,0.8041666666666667,5,,
+QdrantOnly,baseline,diabetes,blood sugar lowering study trials recruiting,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,diabetes,diabetes clinical trials medication,1.0,1.0,0.9558295932317544,0.8875,5,,
+QdrantOnly,baseline,obesity,clinical studies for obesity weight loss,1.0,1.0,0.9047172294870751,0.8041666666666667,5,,
+QdrantOnly,baseline,obesity,trials for weight loss medications,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,obesity,obesity drug studies recruiting,1.0,1.0,0.9558295932317544,0.8875,5,,
+QdrantOnly,baseline,obesity,trials for GLP-1 drugs for obesity,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,obesity,clinical weight management trial,0.0,1.0,0.5437713091520254,0.3666666666666667,5,,
+QdrantOnly,baseline,hypertension,clinical trials for high blood pressure medication,1.0,1.0,0.9047172294870751,0.8041666666666667,5,,
+QdrantOnly,baseline,hypertension,hypertension drug research studies,1.0,1.0,0.9674679834891693,0.9166666666666666,5,,
+QdrantOnly,baseline,hypertension,blood pressure control treatment trials,0.0,1.0,0.6182885020492784,0.4777777777777777,5,,
+QdrantOnly,baseline,hypertension,studies for resistant hypertension,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,hypertension,clinical trials lowering BP in adults,0.0,1.0,0.5437713091520254,0.3666666666666667,5,,
+QdrantOnly,baseline,cardiovascular,heart disease clinical trials medication,0.0,1.0,0.5706417189553201,0.41666666666666663,5,,
+QdrantOnly,baseline,cardiovascular,heart failure treatment study recruiting,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,cardiovascular,trials for coronary artery disease,0.0,1.0,0.43067655807339306,0.25,5,,
+QdrantOnly,baseline,cardiovascular,cardiovascular outcome trials new drugs,1.0,1.0,0.9828920819566879,0.95,5,,
+QdrantOnly,baseline,cardiovascular,clinical research for heart conditions,0.0,1.0,0.5012658353418871,0.325,5,,
+QdrantOnly,baseline,ckd,chronic kidney disease medication trials,0.0,1.0,0.6240505200038379,0.45,5,,
+QdrantOnly,baseline,ckd,CKD treatment clinical research,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,ckd,renal function improvement drug trial,0.0,1.0,0.6309297535714575,0.5,5,,
+QdrantOnly,baseline,ckd,kidney failure study recruiting,0.0,1.0,0.5,0.3333333333333333,5,,
+QdrantOnly,baseline,ckd,clinical trials slowing kidney damage,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,alzheimer,Alzheimer's disease clinical trials,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,alzheimer,trials for memory loss treatment drugs,0.0,1.0,0.43067655807339306,0.25,5,,
+QdrantOnly,baseline,alzheimer,beta amyloid therapy studies recruiting,0.0,1.0,0.7122630665145961,0.5888888888888889,5,,
+QdrantOnly,baseline,alzheimer,Alzheimer's patient cognition trial,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,alzheimer,clinical research for dementia,1.0,1.0,0.8503449055347546,0.7,5,,
+QdrantOnly,baseline,parkinson,Parkinson disease new drug clinical trials,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,parkinson,deep brain stimulation research studies,0.0,1.0,0.6240505200038379,0.45,5,,
+QdrantOnly,baseline,parkinson,movement disorder treatment trial,0.0,1.0,0.6797310500037655,0.5333333333333333,5,,
+QdrantOnly,baseline,parkinson,Parkinson medication trials recruiting,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,parkinson,neuroprotective therapy study PD,1.0,1.0,0.9047172294870751,0.8041666666666667,5,,
+QdrantOnly,baseline,asthma,asthma inhaler treatment trials,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,asthma,biologic therapy study for asthma,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,asthma,severe asthma medication research,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,asthma,airway inflammation clinical trials,1.0,1.0,0.9674679834891693,0.9166666666666666,5,,
+QdrantOnly,baseline,asthma,clinical trials for adult asthma,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,copd,COPD inhaler medication trials,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,copd,emphysema clinical research,0.0,1.0,0.43067655807339306,0.25,5,,
+QdrantOnly,baseline,copd,bronchodilator therapy trials recruiting,0.0,1.0,0.38685280723454163,0.2,5,,
+QdrantOnly,baseline,copd,COPD oxygen therapy study,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,copd,lung function improvement clinical trials,0.0,1.0,0.6240505200038379,0.45,5,,
+QdrantOnly,baseline,breast_cancer,breast cancer immunotherapy trials,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,breast_cancer,HER2 positive breast cancer clinical study,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,breast_cancer,hormone therapy breast cancer research,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,breast_cancer,breast cancer stage iii drug trials,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,breast_cancer,breast cancer radiation therapy study,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,lung_cancer,NSCLC immunotherapy clinical trials,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,lung_cancer,lung cancer targeted therapy study,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,lung_cancer,small cell lung cancer chemo trials,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,lung_cancer,lung tumor treatment clinical research,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,lung_cancer,clinical trials for metastatic lung cancer,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,prostate_cancer,prostate cancer immunotherapy trials,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,prostate_cancer,androgen deprivation therapy study,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,prostate_cancer,clinical trials for prostate tumor drugs,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,prostate_cancer,metastatic prostate cancer research,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,prostate_cancer,radiation study prostate cancer,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,stroke,stroke clinical trials improving recovery,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,stroke,ischemic stroke treatment study,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,stroke,neuroprotection stroke trials,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,stroke,stroke rehab therapy research,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,stroke,blood clot stroke treatment trials,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,baseline,rheumatoid_arthritis,rheumatoid arthritis biologic trials,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,rheumatoid_arthritis,joint inflammation therapy research,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,rheumatoid_arthritis,RA disease-modifying drug studies,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,rheumatoid_arthritis,clinical research for rheumatoid arthritis,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,baseline,rheumatoid_arthritis,anti-TNF trials for RA,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,diabetes,my sugar stays high even after metformin any new studies?,1.0,1.0,0.9047172294870751,0.8041666666666667,5,,
+QdrantOnly,robust,diabetes,are there trials for diabetes with kidney issues?,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,robust,diabetes,experimental insulin resistance drug test?,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,robust,diabetes,diabetes long time injections help research?,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,robust,diabetes,type two diabetes and heart problems studies?,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,robust,obesity,best study for ppl who cant lose weight on diet?,0.0,1.0,0.7328286204777911,0.6388888888888888,5,,
+QdrantOnly,robust,obesity,any new medication testing to help appetite?,0.0,1.0,0.6509209298071326,0.5,5,,
+QdrantOnly,robust,obesity,trials for unhealthy bmi with no surgery?,1.0,1.0,0.9047172294870751,0.8041666666666667,5,,
+QdrantOnly,robust,obesity,weight drops then comes back need study?,0.0,1.0,0.7122630665145961,0.5888888888888889,5,,
+QdrantOnly,robust,obesity,research for people obese and diabetic same time?,1.0,1.0,0.9828920819566879,0.95,5,,
+QdrantOnly,robust,hypertension,bp stays high even on two meds any trial?,0.0,1.0,0.6182885020492784,0.4777777777777777,5,,
+QdrantOnly,robust,hypertension,test treatments for high BP heart issues combo?,0.0,1.0,0.5,0.3333333333333333,5,,
+QdrantOnly,robust,hypertension,new hypertension pill study lowering top number?,1.0,1.0,0.9558295932317544,0.8875,5,,
+QdrantOnly,robust,hypertension,stress causes my bp spike any study?,0.0,1.0,0.6309297535714575,0.5,5,,
+QdrantOnly,robust,hypertension,severe high blood pressure trials?,0.0,1.0,0.38685280723454163,0.2,5,,
+QdrantOnly,robust,cardiovascular,heart failure after attack any new research?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,cardiovascular,trial for blocked arteries no surgery option?,0.0,1.0,0.5,0.3333333333333333,5,,
+QdrantOnly,robust,cardiovascular,prevent next heart attack clinical study?,0.0,1.0,0.6309297535714575,0.5,5,,
+QdrantOnly,robust,cardiovascular,cholesterol fine but heart disease still test?,1.0,1.0,0.9060254355346823,0.8055555555555555,5,,
+QdrantOnly,robust,cardiovascular,heart weak pumping any therapy study?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,ckd,kidneys getting worse on meds trial maybe?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,ckd,diabetes + kidney disease drug test?,0.0,1.0,0.43067655807339306,0.25,5,,
+QdrantOnly,robust,ckd,protein in urine any clinical study?,0.0,1.0,0.43067655807339306,0.25,5,,
+QdrantOnly,robust,ckd,dialysis soon help delay trial?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,ckd,CKD stage 3 new therapy research?,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,robust,alzheimer,memory slipping early can i join study?,0.0,1.0,0.6309297535714575,0.5,5,,
+QdrantOnly,robust,alzheimer,caregiver looking for trial mild alz?,0.0,1.0,0.5,0.3333333333333333,5,,
+QdrantOnly,robust,alzheimer,amyloid drug didn’t work any new ones?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,alzheimer,forget names early dementia research?,1.0,1.0,0.9828920819566879,0.95,5,,
+QdrantOnly,robust,alzheimer,family history want prevention study?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,parkinson,hands shaking bad medication not working trial?,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,robust,parkinson,slow walking freezing PD study?,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,robust,parkinson,dopamine pills wearing off new therapy?,1.0,1.0,0.9558295932317544,0.8875,5,,
+QdrantOnly,robust,parkinson,tremor side effects trial testing?,1.0,1.0,0.8503449055347546,0.7,5,,
+QdrantOnly,robust,parkinson,parkinsons with depression research?,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,robust,asthma,inhaler not enough severe attack any studies?,0.0,1.0,0.6182885020492784,0.4777777777777777,5,,
+QdrantOnly,robust,asthma,exercise asthma trial help lungs?,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,robust,asthma,new biologic for allergies + asthma?,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,robust,asthma,can’t breathe pollen season any research?,1.0,1.0,0.9060254355346823,0.8055555555555555,5,,
+QdrantOnly,robust,asthma,asthma with obesity study?,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,robust,copd,SOB walking to bathroom trial help?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,copd,quit smoking still breath bad research?,0.0,1.0,0.5,0.3333333333333333,5,,
+QdrantOnly,robust,copd,oxygen at home trial new device?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,copd,lung damage reverse study?,0.0,1.0,0.6309297535714575,0.5,5,,
+QdrantOnly,robust,copd,COPD flare ups too many any trials?,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,robust,breast_cancer,tumor came back after surgery any new meds?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,breast_cancer,HER2 neg trial immuno maybe?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,breast_cancer,genetic breast cancer study BRCA?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,breast_cancer,chemo not working alternatives trial?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,breast_cancer,breast cancer bone spread research?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,lung_cancer,trial after immunotherapy stops working?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,lung_cancer,EGFR mutation new study?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,lung_cancer,cough blood lung cancer trial?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,lung_cancer,chemo side effects too bad alternative study?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,lung_cancer,lung tumor shrink radiation combo trial?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,prostate_cancer,PSA rising again any study?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,prostate_cancer,bone metastasis research new drugs?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,prostate_cancer,hormone shots stopped working what trial?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,prostate_cancer,prostate cancer recurrence clinical study?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,prostate_cancer,older person prostate study fewer side fx?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,stroke,stroke last year arm weak any rehab study?,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,robust,stroke,clot drug trial testing new meds?,0.0,1.0,0.6309297535714575,0.5,5,,
+QdrantOnly,robust,stroke,late stroke recovery brain therapy?,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,robust,stroke,speech still hard trial?,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,robust,stroke,prevent second stroke trial?,1.0,1.0,1.0,1.0,5,,
+QdrantOnly,robust,rheumatoid_arthritis,RA meds stopped working what studies?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,rheumatoid_arthritis,joint pain morning stiff research?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,rheumatoid_arthritis,RA + lung issues trial?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,rheumatoid_arthritis,experimental injection for immune system?,0.0,0.0,0.0,0.0,5,,
+QdrantOnly,robust,rheumatoid_arthritis,hard to walk flare often research?,0.0,0.0,0.0,0.0,5,,
