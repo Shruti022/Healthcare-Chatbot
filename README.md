@@ -19,51 +19,54 @@ The core files in this repo (deployment folder) are:
 
 ### Quickstart: run locally
 
-> **Prerequisites**  
-> - Python **3.10+** (tested with your Colab / local environment; 3.10 or 3.11 is safest for the torch + transformers versions in `requirements`).[1]
-> - A Qdrant Cloud cluster with an existing `clinical_trials` collection and API key.
-> - A Gemini API key with access to **Gemini 2.0 Flash**.   
-> - `git` and `pip` installed.
+**Prerequisites**  
+- Python **3.10+** (tested with your Colab / local environment; 3.10 or 3.11 is safest for the torch + transformers versions in `requirements`).[1]
+- A Qdrant Cloud cluster with an existing `clinical_trials` collection and API key.
+- A Gemini API key with access to **Gemini 2.0 Flash**.   
+- `git` and `pip` installed.
 
 **Setup**  
-> ```bash
-> git clone <YOUR_REPO_URL>
-> cd <YOUR_REPO_NAME>
-> # Create and activate a virtual environment (recommended)
-> python -m venv .venv
-> source .venv/bin/activate    # on Windows: .venv\Scripts\activate
-> # Install dependencies
-> pip install -r requirements
-> ```
-
-> The `requirements` file includes:
-> - `streamlit==1.31.0`  
-> - `pandas==2.1.4`, `numpy==1.26.3`  
-> - `qdrant-client==1.16.1`  
-> - `google-generativeai==0.3.2`  
-> - `torch==2.3.1`, `transformers==4.40.2`, `sentence-transformers==2.7.0`  
-> - `requests==2.31.0` 
-
-> **Configure environment variables**  
-Set the following environment variables in your shell (or via a `.env` file and a loader if you prefer):
 ```bash
-> export GEMINI_API_KEY="your_gemini_key_here"
-> export QDRANT_API_KEY="your_qdrant_key_here"
-> export QDRANT_URL="https://<your-cluster>.qdrant.io"
-> ```
-> 
-> On Windows (PowerShell):
-> ```powershell
-> $env:GEMINI_API_KEY="your_gemini_key_here"
-> $env:QDRANT_API_KEY="your_qdrant_key_here"
-> $env:QDRANT_URL="https://<your-cluster>.qdrant.io"
-```
-> In the Streamlit app, you can also enter keys in the **sidebar**, but for production deployments (Docker / Cloud Run) use environment variables.
+git clone <YOUR_REPO_URL>
+cd <YOUR_REPO_NAME>
 
-> **Run the app locally**
-> ```bash
-> streamlit run app.py
-> ```
+# Create and activate a virtual environment (recommended)
+python -m venv .venv
+source .venv/bin/activate    # on Windows: .venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements
+```
+
+The `requirements` file includes:
+- `streamlit==1.31.0`  
+- `pandas==2.1.4`, `numpy==1.26.3`  
+- `qdrant-client==1.16.1`  
+- `google-generativeai==0.3.2`  
+- `torch==2.3.1`, `transformers==4.40.2`, `sentence-transformers==2.7.0`  
+- `requests==2.31.0` 
+
+**Configure environment variables**  
+> Set the following environment variables in your shell (or via a `.env` file and a loader if you prefer):
+```bash
+export GEMINI_API_KEY="your_gemini_key_here"
+export QDRANT_API_KEY="your_qdrant_key_here"
+export QDRANT_URL="https://<your-cluster>.qdrant.io"
+```
+
+> On Windows (PowerShell):
+```powershell
+$env:GEMINI_API_KEY="your_gemini_key_here"
+$env:QDRANT_API_KEY="your_qdrant_key_here"
+$env:QDRANT_URL="https://<your-cluster>.qdrant.io"
+```
+
+In the Streamlit app, you can also enter keys in the **sidebar**, but for production deployments (Docker / Cloud Run) use environment variables.
+
+**Run the app locally**
+```bash
+streamlit run app.py
+```
 
 Then open the URL printed by Streamlit (usually `http://localhost:8501`) in your browser. You should see:
   - Title “Clinical Trials Search Assistant”
@@ -84,19 +87,19 @@ The app needs three secrets/config values:
 
 ### Using the app
 
-	⁠1. Open the app (local ⁠ http://localhost:8501 ⁠ or your Cloud Run URL).   
-	⁠2. Configure keys in the sidebar if they are not already set. Once keys are valid, the sidebar shows “✓ Keys configured” and the bot is initialized.   
-	⁠3. Type a question in the chat input, such as:
-      - Baseline-style examples:  
-        - ⁠ "GLP-1 agonist trials for type 2 diabetes" ⁠  
-        - ⁠ "breast cancer immunotherapy trials"
-      - Robust, patient-style examples:  
-        - ⁠ "RA meds stopped working what studies?" 
-        - ⁠ "asthma with obesity study?" ⁠   
-	⁠4. The assistant will:
-    - Parse the query to detect disease and intent.  
-    - Retrieve trials from Qdrant and compute a hybrid score.   
-    - Return *up to 5 trials* with NCT IDs, titles, plain-English summaries, and (when available) PubMed abstracts and links.   
-    - Show metrics in the “📊 Details” expander (Trials Found, Confidence, Session Hash).   
-    - Include a safety disclaimer that it does not give diagnoses or treatment recommendations. 
+⁠1. Open the app (local ⁠ http://localhost:8501 ⁠ or your Cloud Run URL).   
+⁠2. Configure keys in the sidebar if they are not already set. Once keys are valid, the sidebar shows “✓ Keys configured” and the bot is initialized.   
+⁠3. Type a question in the chat input, such as:
+  - Baseline-style examples:  
+	- ⁠ "GLP-1 agonist trials for type 2 diabetes" ⁠  
+	- ⁠ "breast cancer immunotherapy trials"
+  - Robust, patient-style examples:  
+	- ⁠ "RA meds stopped working what studies?" 
+	- ⁠ "asthma with obesity study?" ⁠   
+⁠4. The assistant will:
+- Parse the query to detect disease and intent.  
+- Retrieve trials from Qdrant and compute a hybrid score.   
+- Return *up to 5 trials* with NCT IDs, titles, plain-English summaries, and (when available) PubMed abstracts and links.   
+- Show metrics in the “📊 Details” expander (Trials Found, Confidence, Session Hash).   
+- Include a safety disclaimer that it does not give diagnoses or treatment recommendations. 
 
