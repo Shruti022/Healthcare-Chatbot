@@ -91,12 +91,12 @@ The app needs three secrets/config values:
 ⁠1. Open the app (local ⁠ http://localhost:8501 ⁠ or your Cloud Run URL).   
 ⁠2. Configure keys in the sidebar if they are not already set. Once keys are valid, the sidebar shows “✓ Keys configured” and the bot is initialized.   
 ⁠3. Type a question in the chat input, such as:
-	- Baseline-style examples:  
-		- ⁠ "GLP-1 agonist trials for type 2 diabetes" ⁠  
-		- ⁠ "breast cancer immunotherapy trials"
-	- Robust, patient-style examples:  
-		- ⁠ "RA meds stopped working what studies?" 
-		- ⁠ "asthma with obesity study?" ⁠   
+		- Baseline-style examples:  
+			- ⁠ "GLP-1 agonist trials for type 2 diabetes" ⁠  
+			- ⁠ "breast cancer immunotherapy trials"
+		- Robust, patient-style examples:  
+			- ⁠ "RA meds stopped working what studies?" 
+			- ⁠ "asthma with obesity study?" ⁠   
 ⁠4. The assistant will:
 	- Parse the query to detect disease and intent.  
 	- Retrieve trials from Qdrant and compute a hybrid score.   
