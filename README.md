@@ -19,7 +19,7 @@ The core files in this repo (deployment folder) are:
 ### Quickstart: run locally
 
 **Prerequisites**  
-- Python **3.10+** (tested with your Colab / local environment; 3.10 or 3.11 is safest for the torch + transformers versions in `requirements`).[1]
+- Python **3.10+** (tested with your Colab / local environment; 3.10 or 3.11 is safest for the torch + transformers versions in `requirements`).
 - A Qdrant Cloud cluster with an existing `clinical_trials` collection and API key.
 - A Gemini API key with access to **Gemini 2.0 Flash**.   
 - `git` and `pip` installed.
@@ -122,15 +122,14 @@ You can also launch the app from a Colab notebook and expose it via Cloudflare T
 !./cloudflared tunnel --url http://localhost:8501 --no-autoupdate
 ```
 
-⁠- Set ⁠ GEMINI_API_KEY ⁠, ⁠ QDRANT_API_KEY ⁠, and ⁠ QDRANT_URL ⁠ as environment variables in the notebook or via the Streamlit sidebar.
-
-- The last command prints a public HTTPS URL you can share for demos.
+> Set ⁠ GEMINI_API_KEY ⁠, ⁠ QDRANT_API_KEY ⁠, and ⁠ QDRANT_URL ⁠ as environment variables in the notebook or via the Streamlit sidebar.
+> The last command prints a public HTTPS URL you can share for demos.
 
 
 
 ### Optional: Deploying to Google Cloud Run
 
-The repo includes a ⁠ Dockerfile ⁠ so you can deploy the Streamlit app as a container on Cloud Run.[1][2]
+The repo includes a ⁠ Dockerfile ⁠ so you can deploy the Streamlit app as a container on Cloud Run.
 
 ⁠*High-level steps:*
 1. Build and push the image:
@@ -150,7 +149,64 @@ gcloud run deploy clinical-trials-app \
 ⁠
 ⁠3. Cloud Run returns a URL like  
 > https://clinical-trials-app-XXXXXXXXXX.us-central1.run.app/ ⁠ – this is the stable URL we’re using now.   
-⁠In Cloud Run, environment variables are the recommended way to inject secrets; they are not visible in the source code or UI.[2]
+⁠In Cloud Run, environment variables are the recommended way to inject secrets; they are not visible in the source code or UI.
+
+
+### Advanced: Updating the Qdrant corpus
+⁠The app assumes a Qdrant collection ⁠ clinical_trials ⁠ already exists. To rebuild or extend it from CSV exports, use ⁠ update_qdrant_auto.py.
+
+*What the script does:*
+- Finds all ⁠ .csv ⁠ files in a specified Drive folder.
+- Loads and concatenates them, *drops duplicate trials by ⁠ nct_id ⁠*, and filters out bad statuses (Terminated, Withdrawn, Suspended, etc.).
+- Builds chunks of the form ⁠ "Title: ...\nSummary: ..." ⁠ using ⁠ brief_title ⁠ and ⁠ brief_summary.
+- Generates 384‑dim embeddings with ⁠ SentenceTransformer("all-MiniLM-L6-v2").
+- Uploads embeddings + payloads into the ⁠ clinical_trials ⁠ collection in Qdrant, either in ⁠ "refresh" ⁠ mode (delete + recreate) or ⁠ "add" ⁠ mode.
+
+*Usage (inside Colab or locally):*
+```python
+from update_qdrant_auto import QdrantAutoPipeline
+
+DRIVE_FOLDER = "/content/drive/MyDrive/LLM_Based_GenAI_Sem1/data"
+QDRANT_URL  = "https://<your-cluster>.qdrant.io"
+ 
+pipeline = QdrantAutoPipeline(QDRANT_URL, qdrant_key)
+pipeline.run_auto_pipeline(DRIVE_FOLDER, mode="refresh")  # or "add"
+```
+ ⁠
+⁠This step is *optional*; most users can simply reuse the existing Qdrant index without running this pipeline.
 
 
 
+### Troubleshooting
+
+⁠*Environment / versions*
+- Use Python *3.10 or 3.11*; older versions may conflict with ⁠ torch==2.3.1 ⁠ and ⁠ transformers==4.40.2.
+- If installation fails, upgrade pip: ⁠ python -m pip install --upgrade pip .
+
+
+⁠*App does not start / Streamlit error*
+- Ensure ⁠ pip install -r requirements ⁠ completed without errors.
+- Confirm you run ⁠ streamlit run app.py ⁠ from the repo root (where ⁠ app.py ⁠ lives). 
+
+*“Please enter API keys first!” in the UI*
+- Either set ⁠ GEMINI_API_KEY ⁠, ⁠ QDRANT_API_KEY ⁠, and ⁠ QDRANT_URL ⁠ as environment variables *before* launching, or fill them in the sidebar “⚙️ Configuration” section. 
+
+
+⁠*Qdrant connection errors*
+- Check that ⁠ QDRANT_URL ⁠ matches your cluster URL exactly (including region and protocol).
+- Verify ⁠ QDRANT_API_KEY ⁠ is correct and the collection ⁠ clinical_trials ⁠ exists and has points (you can confirm with ⁠ client.get_collection("clinical_trials") ⁠).
+
+
+⁠*Gemini errors / rate limit issues*
+- Make sure ⁠ GEMINI_API_KEY ⁠ is valid and has access to Gemini 2.0 Flash.
+- For large evaluation runs, respect rate limits; your notebooks use ⁠ time.sleep(0.75) ⁠ between calls to avoid hitting quotas. 
+
+
+⁠*No trials returned / empty results*
+- Verify Qdrant collection ⁠ clinical_trials ⁠ contains vectors (⁠ points_count > 0 ⁠).
+- Check that your query is about one of the 13–14 supported diseases; off-topic or unsupported conditions may trigger the greeting or a low-confidence message instead of trials. 
+
+
+⁠*UI shows but is slow*
+- First call may be slower because it loads the embedding model and Qdrant client.
+- On Cloud Run, ensure you allocate enough memory/CPU for the container; cold starts are expected.
