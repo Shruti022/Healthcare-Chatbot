@@ -37,4 +37,54 @@ pip install -r requirements
 
 ```
 
+### 3. Quickstart: run locally
 
+> **Prerequisites**  
+> - Python **3.10+** (tested with your Colab / local environment; 3.10 or 3.11 is safest for the torch + transformers versions in `requirements`).[1]
+> - A Qdrant Cloud cluster with an existing `clinical_trials` collection and API key.[2]
+> - A Gemini API key with access to **Gemini 2.0 Flash**.   
+> - `git` and `pip` installed.
+
+> **Setup**  
+> ```bash
+> git clone <YOUR_REPO_URL>
+> cd <YOUR_REPO_NAME>
+> 
+> # Create and activate a virtual environment (recommended)
+> python -m venv .venv
+> source .venv/bin/activate    # on Windows: .venv\Scripts\activate
+> 
+> # Install dependencies
+> pip install -r requirements
+> ```
+> The `requirements` file includes:
+> - `streamlit==1.31.0`  
+> - `pandas==2.1.4`, `numpy==1.26.3`  
+> - `qdrant-client==1.16.1`  
+> - `google-generativeai==0.3.2`  
+> - `torch==2.3.1`, `transformers==4.40.2`, `sentence-transformers==2.7.0`  
+> - `requests==2.31.0` 
+
+> **Configure environment variables**  
+> Set the following environment variables in your shell (or via a `.env` file and a loader if you prefer):
+> ```bash
+> export GEMINI_API_KEY="your_gemini_key_here"
+> export QDRANT_API_KEY="your_qdrant_key_here"
+> export QDRANT_URL="https://<your-cluster>.qdrant.io"
+> ```
+> On Windows (PowerShell):
+> ```powershell
+> $env:GEMINI_API_KEY="your_gemini_key_here"
+> $env:QDRANT_API_KEY="your_qdrant_key_here"
+> $env:QDRANT_URL="https://<your-cluster>.qdrant.io"
+> ```
+> In the Streamlit app, you can also enter keys in the **sidebar**, but for production deployments (Docker / Cloud Run) use environment variables.[3]
+
+> **Run the app locally**
+> ```bash
+> streamlit run app.py
+> ```
+> Then open the URL printed by Streamlit (usually `http://localhost:8501`) in your browser. You should see:  
+> - Title “Clinical Trials Search Assistant”  
+> - A sidebar with fields for Gemini API Key, Qdrant API Key, and Qdrant URL  
+> - A chat input box “Ask about clinical trials...” 
