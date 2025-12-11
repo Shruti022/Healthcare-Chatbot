@@ -16,7 +16,6 @@ The core files in this repo (deployment folder) are:
 (This is present in Colab notebook)
 
 
-
 ### Quickstart: run locally
 
 **Prerequisites**  
@@ -47,14 +46,15 @@ The `requirements` file includes:
 - `requests==2.31.0` 
 
 **Configure environment variables**  
-> Set the following environment variables in your shell (or via a `.env` file and a loader if you prefer):
+
+Set the following environment variables in your shell (or via a `.env` file and a loader if you prefer):
 ```bash
 export GEMINI_API_KEY="your_gemini_key_here"
 export QDRANT_API_KEY="your_qdrant_key_here"
 export QDRANT_URL="https://<your-cluster>.qdrant.io"
 ```
 
-> On Windows (PowerShell):
+On Windows (PowerShell):
 ```powershell
 $env:GEMINI_API_KEY="your_gemini_key_here"
 $env:QDRANT_API_KEY="your_qdrant_key_here"
@@ -74,6 +74,7 @@ Then open the URL printed by Streamlit (usually `http://localhost:8501`) in your
   - A chat input box “Ask about clinical trials...”
 
 
+
 ### Configuration & environment variables
 
 The app needs three secrets/config values:
@@ -90,16 +91,16 @@ The app needs three secrets/config values:
 ⁠1. Open the app (local ⁠ http://localhost:8501 ⁠ or your Cloud Run URL).   
 ⁠2. Configure keys in the sidebar if they are not already set. Once keys are valid, the sidebar shows “✓ Keys configured” and the bot is initialized.   
 ⁠3. Type a question in the chat input, such as:
-  - Baseline-style examples:  
-	- ⁠ "GLP-1 agonist trials for type 2 diabetes" ⁠  
-	- ⁠ "breast cancer immunotherapy trials"
-  - Robust, patient-style examples:  
-	- ⁠ "RA meds stopped working what studies?" 
-	- ⁠ "asthma with obesity study?" ⁠   
+	- Baseline-style examples:  
+		- ⁠ "GLP-1 agonist trials for type 2 diabetes" ⁠  
+		- ⁠ "breast cancer immunotherapy trials"
+	- Robust, patient-style examples:  
+		- ⁠ "RA meds stopped working what studies?" 
+		- ⁠ "asthma with obesity study?" ⁠   
 ⁠4. The assistant will:
-- Parse the query to detect disease and intent.  
-- Retrieve trials from Qdrant and compute a hybrid score.   
-- Return *up to 5 trials* with NCT IDs, titles, plain-English summaries, and (when available) PubMed abstracts and links.   
-- Show metrics in the “📊 Details” expander (Trials Found, Confidence, Session Hash).   
-- Include a safety disclaimer that it does not give diagnoses or treatment recommendations. 
+	- Parse the query to detect disease and intent.  
+	- Retrieve trials from Qdrant and compute a hybrid score.   
+	- Return *up to 5 trials* with NCT IDs, titles, plain-English summaries, and (when available) PubMed abstracts and links.   
+	- Show metrics in the “📊 Details” expander (Trials Found, Confidence, Session Hash).   
+	- Include a safety disclaimer that it does not give diagnoses or treatment recommendations. 
 
