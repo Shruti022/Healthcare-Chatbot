@@ -96,11 +96,32 @@ The app needs three secrets/config values:
 	- ⁠ "breast cancer immunotherapy trials"
 - Robust, patient-style examples:  
 	- ⁠ "RA meds stopped working what studies?" 
-	- ⁠ "asthma with obesity study?" ⁠   
-⁠4. The assistant will:
+	- ⁠ "asthma with obesity study?" 
+4. The assistant will:
 - Parse the query to detect disease and intent.  
 - Retrieve trials from Qdrant and compute a hybrid score.   
 - Return *up to 5 trials* with NCT IDs, titles, plain-English summaries, and (when available) PubMed abstracts and links.   
 - Show metrics in the “📊 Details” expander (Trials Found, Confidence, Session Hash).   
 - Include a safety disclaimer that it does not give diagnoses or treatment recommendations. 
+
+
+### Optional: Run in Colab with public URL
+You can also launch the app from a Colab notebook and expose it via Cloudflare Tunnel (as in your evaluation notebook).   
+```bash
+# Install dependencies
+!pip install -r requirements
+
+# (Optional) download cloudflared
+!wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -O cloudflared
+!chmod +x cloudflared
+
+# Start Streamlit in the background
+!streamlit run app.py &>/dev/null &
+
+# Expose the app on a public URL
+!./cloudflared tunnel --url http://localhost:8501 --no-autoupdate
+```
+⁠- Set ⁠ GEMINI_API_KEY ⁠, ⁠ QDRANT_API_KEY ⁠, and ⁠ QDRANT_URL ⁠ as environment variables in the notebook or via the Streamlit sidebar.  
+- The last command prints a public HTTPS URL you can share for demos. 
+
 
