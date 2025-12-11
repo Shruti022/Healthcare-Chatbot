@@ -87,4 +87,15 @@ pip install -r requirements
 > Then open the URL printed by Streamlit (usually `http://localhost:8501`) in your browser. You should see:  
 > - Title “Clinical Trials Search Assistant”  
 > - A sidebar with fields for Gemini API Key, Qdrant API Key, and Qdrant URL  
-> - A chat input box “Ask about clinical trials...” 
+> - A chat input box “Ask about clinical trials...”
+>
+> ### 4. Configuration & environment variables
+
+> The app needs three secrets/config values:
+> - `GEMINI_API_KEY` – Google Gemini API key with access to **Gemini 2.0 Flash** (used by SymptomParser, DiagnosisAdvisor, and ActiveSafetyFilter).   
+> - `QDRANT_API_KEY` – API key for your Qdrant Cloud cluster.   
+> - `QDRANT_URL` – HTTPS URL of your Qdrant cluster (for example: `https://215ec69e-fa22-4f38-bcf3-941e73901a68.us-east4-0.gcp.cloud.qdrant.io`).   
+>
+> **Local development:** you can either export these variables before running `streamlit run app.py`, or enter them in the Streamlit sidebar under “⚙️ Configuration”.   
+>
+> **Docker / Cloud Run:** set these as environment variables on the service (recommended) so keys are **not** hard-coded in code or UI.[1]
