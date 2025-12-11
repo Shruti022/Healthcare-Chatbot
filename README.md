@@ -14,3 +14,27 @@ The core files in this repo (deployment folder) are:
 - Dockerfile, .dockerignore – container image definition for deployment on Google Cloud Run.
 - update_qdrant_auto.py – optional script to rebuild or extend the Qdrant index from CSV exports (deduplicates nct_id, filters bad statuses, embeds with MiniLM, uploads to Qdrant).​
 (This is present in Colab notebook)
+
+
+## Quickstart: run locally
+Prerequisites
+- Python 3.10+ (tested with your Colab / local environment; 3.10 or 3.11 is safest for the torch + transformers versions in requirements).​
+- A Qdrant Cloud cluster with an existing clinical_trials collection and API key.​
+- A Gemini API key with access to Gemini 2.0 Flash.
+- git and pip installed
+
+Setup
+```bash
+git clone <YOUR_REPO_URL>
+cd <YOUR_REPO_NAME>
+
+# Create and activate a virtual environment (recommended)
+python -m venv .venv
+source .venv/bin/activate    # on Windows: .venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements
+
+```
+
+
