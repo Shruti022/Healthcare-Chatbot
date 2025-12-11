@@ -121,7 +121,36 @@ You can also launch the app from a Colab notebook and expose it via Cloudflare T
 # Expose the app on a public URL
 !./cloudflared tunnel --url http://localhost:8501 --no-autoupdate
 ```
-⁠- Set ⁠ GEMINI_API_KEY ⁠, ⁠ QDRANT_API_KEY ⁠, and ⁠ QDRANT_URL ⁠ as environment variables in the notebook or via the Streamlit sidebar.  
-- The last command prints a public HTTPS URL you can share for demos. 
+
+⁠- Set ⁠ GEMINI_API_KEY ⁠, ⁠ QDRANT_API_KEY ⁠, and ⁠ QDRANT_URL ⁠ as environment variables in the notebook or via the Streamlit sidebar.
+
+- The last command prints a public HTTPS URL you can share for demos.
+
+
+
+### Optional: Deploying to Google Cloud Run
+
+The repo includes a ⁠ Dockerfile ⁠ so you can deploy the Streamlit app as a container on Cloud Run.[1][2]
+
+⁠*High-level steps:*
+1. Build and push the image:
+```bash
+gcloud builds submit --tag gcr.io/<PROJECT_ID>/clinical-trials-app
+```
+⁠
+2. Deploy to Cloud Run:
+```bash
+gcloud run deploy clinical-trials-app \
+	--image gcr.io/<PROJECT_ID>/clinical-trials-app \
+	--platform managed \
+	--region us-central1 \
+	--allow-unauthenticated \
+	--set-env-vars GEMINI_API_KEY=...,QDRANT_API_KEY=...,QDRANT_URL=...
+```
+⁠
+⁠3. Cloud Run returns a URL like  
+> https://clinical-trials-app-XXXXXXXXXX.us-central1.run.app/ ⁠ – this is the stable URL we’re using now.   
+⁠In Cloud Run, environment variables are the recommended way to inject secrets; they are not visible in the source code or UI.[2]
+
 
 
