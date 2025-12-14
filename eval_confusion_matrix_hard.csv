@@ -1,0 +1,15 @@
+target_disease,diabetes,other,obesity,hypertension,cardiovascular,ckd,alzheimer,parkinson,asthma,copd,breast_cancer,lung_cancer,prostate_cancer,rheumatoid_arthritis
+diabetes,4,1,0,0,0,0,0,0,0,0,0,0,0,0
+hypertension,1,0,0,4,0,0,0,0,0,0,0,0,0,0
+cardiovascular,1,1,0,0,3,0,0,0,0,0,0,0,0,0
+ckd,1,0,0,0,1,3,0,0,0,0,0,0,0,0
+alzheimer,0,2,0,0,0,0,3,0,0,0,0,0,0,0
+copd,0,1,0,0,1,0,0,0,0,3,0,0,0,0
+breast_cancer,0,1,0,0,0,0,0,0,0,0,4,0,0,0
+lung_cancer,0,2,0,0,0,0,0,0,0,1,0,2,0,0
+rheumatoid_arthritis,0,1,0,0,0,0,0,0,0,0,0,0,0,4
+obesity,0,0,5,0,0,0,0,0,0,0,0,0,0,0
+stroke,0,0,0,0,5,0,0,0,0,0,0,0,0,0
+parkinson,0,0,0,0,0,0,0,5,0,0,0,0,0,0
+asthma,0,0,0,0,0,0,0,0,5,0,0,0,0,0
+prostate_cancer,0,0,0,0,0,0,0,0,0,0,0,0,5,0
