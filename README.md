@@ -24,6 +24,11 @@ The core files in this repo (deployment folder) are:
 - A Gemini API key with access to **Gemini 2.0 Flash**.   
 - `git` and `pip` installed.
 
+**Prepare Qdrant Cloud**  
+> - Create a Qdrant Cloud cluster and obtain the cluster **URL** and **API key** from the Qdrant Cloud console .  
+> - In the Qdrant UI, create (or let your ingestion script (qdrant_data_ingestion_clinicaltrials.ipynb) create) a collection named `clinical_trials` with vector size 384 and cosine distance.  
+> - Keep the URL and API key ready; they are required for `QDRANT_URL` and `QDRANT_API_KEY`.
+
 **Setup**  
 ```bash
 git clone <YOUR_REPO_URL>
