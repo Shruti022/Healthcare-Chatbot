@@ -215,3 +215,20 @@ pipeline.run_auto_pipeline(DRIVE_FOLDER, mode="refresh")  # or "add"
 ⁠*UI shows but is slow*
 - First call may be slower because it loads the embedding model and Qdrant client.
 - On Cloud Run, ensure you allocate enough memory/CPU for the container; cold starts are expected.
+
+
+
+### Demo
+
+The app is deployed here:
+
+https://clinical-trials-app-683022330686.us-central1.run.app/
+
+Screenshots (sample run):
+
+![l1](images/l1.png)
+![l2](images/l2.png)
+![l3](images/l3.png)
+![l4](images/l4.png)
+![l5](images/l5.png)
+![l6](images/l6.png)
