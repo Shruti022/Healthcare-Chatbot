@@ -232,3 +232,7 @@ Screenshots (sample run):
 ![l4](images/l4.png)
 ![l5](images/l5.png)
 ![l6](images/l6.png)
+
+## Acknowledgment
+
+We acknowledge the use of ChatGPT (OpenAI, 2025) in the creation of the project. All portions of the project consulted with help and use of AI LLM (OpenAI, 2025). 
